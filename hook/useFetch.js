@@ -1,49 +1,43 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-/* import {RAPID_API_KEY} from '@env'
-
-const rapidApiKey = RAPID_API_KEY */
-
-const useFetch = (endpoint, query) => {
+import { RAPID_API_KEY } from "@env";
+const rapidApiKey = RAPID_API_KEY; 
+const useFetch = (endpoint, query, time) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(false);
 
   const options = {
-    method: 'GET',
+    method: "GET",
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
-    params: {...query},
+    params: { ...query },
     headers: {
-      'X-RapidAPI-Key': '7ab5852c64msh043f2caa064c2c3p14647djsnc54d4bbf5308',
-      'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
-    }
+      "X-RapidAPI-Key": rapidApiKey,
+      "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
+    },
   };
+
   const fetchData = async () => {
     setIsLoading(true);
-
     try {
-      const response = await axios.request(options);
-
-      setData(response.data.data);
-      setIsLoading(false);
+      const res = await axios.request(options);
+      setData(res.data.data);
     } catch (error) {
       setError(error);
-      console.log(error)
+      alert("There is an Error");
     } finally {
       setIsLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchData();
+    setTimeout(() => fetchData(), time || 10);
   }, []);
 
   const refetch = () => {
     setIsLoading(true);
     fetchData();
   };
-
-  console.log(data)
 
   return { data, isLoading, error, refetch };
 };
