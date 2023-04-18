@@ -1,4 +1,4 @@
-<img src="https://github.com/Sahinugur/Job-Search/blob/main/assets/Screenshot_20230418_112938_Expo%20Go.jpg" width="200" height="400" />
+<img src="https://github.com/Sahinugur/Job-Search/blob/main/assets/Screenshot_20230418_112938_Expo%20Go.jpg" width="300" height="600" />
 
 
 # Expo Router Example
