@@ -1,4 +1,9 @@
 <img src="https://github.com/Sahinugur/Job-Search/blob/main/assets/Screenshot_20230418_112938_Expo%20Go.jpg" width="300" height="600" />
+<img src="https://github.com/Sahinugur/Job-Search/blob/main/assets/Screenshot_20230418_112944_Expo%20Go.jpg" width="300" height="600" />
+<img src="https://github.com/Sahinugur/Job-Search/blob/main/assets/Screenshot_20230418_113001_Expo%20Go.jpg" width="300" height="600" />
+<img src="https://github.com/Sahinugur/Job-Search/blob/main/assets/Screenshot_20230418_113037_Expo%20Go.jpg" width="300" height="600" />
+<img src="https://github.com/Sahinugur/Job-Search/blob/main/assets/Screenshot_20230418_113101_Expo%20Go.jpg" width="300" height="600" />
+<img src="https://github.com/Sahinugur/Job-Search/blob/main/assets/Screenshot_20230418_113109_Expo%20Go.jpg" width="300" height="600" />
 
 
 # Expo Router Example
